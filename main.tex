@@ -86,7 +86,13 @@ Database yang disupport antara lain ESRI Personal Geodatabase, ODBC, Postgre, da
 }
 }
 
-/subsection {Panel Daftar Layer}
+/subsection{Panel Daftar Layer}
     Pada bagian kiri QGIS terdapat panel daftar layer. Daftar layer-layer ini, atau file, yang dimasukkan ke dalam proyek QGIS. Pada proyek ini, kita memliki dua layer.
     Panel layer tidak hanya menunjukkan semua file yang kita buka, tetapi juga menjelaskan susunan urutan yang akan kita gambar pada map canvas. Sebuah layer yang terdapat di posisi paling bawah akan tergambar pertama kali dan beberapa layer yang terdapat diatasnya akan digambar pada posisi paling atas.
     Salah satu format file umum adalah shapefiles, dengan ekstensi akhir dari nama file tersebut bertuliskan .shp. Shapefiles sering digunakan untuk menyimpan geodata, dan umumnya digunakan pada aplikasi SIG seperti QGIS.
+
+/subsection{Membuat Layer}
+    Dalam Quantum GIS, kita dapat membuat layer baru yang berupa Shapefile, layer Spatiallite, dan juga GPX layer. Contohnya, bagaimana membuat sebuah Shapefile layer di Quantum GIS. 
+    Langkah pertama buka Quantum GIS dan buatlah sebuah project baru. Kemudian klik Layer | Create Layer dan pilih New Shapefile layer. Quantum GIS mendukung  tiga tipe object yaitu Point (titik), Line (garis) dan juga Polygon. Kita harus memilih salah satu diantara tiga tersebut. Jadi dalam satu buah layer, kita tidak bisa mencampurkan ketiga buah tipe object tersebut. Dalam contoh kali ini bagaimana untuk membuat layer point. Pilih Point pada bagian Type. Untuk file encoding, kita gunakan System sebagai nilai defaultnya. Jangan lupa pula untuk menentukan proyeksi layer anda. Dalam contoh ini saya menggunakan WGS 84.  
+    Kemudian kita perlu menambahkan atribut tabel, yang berupa kolom untuk menampung informasi dalam sebuah layer.
+    Tekan OK dan tentukan nama file dan lokasi untuk menyimpan file SHP nya. Kemudian layer kita sudah siap digunakan. Anda dapat mulai digitasi point dengan mengaktifkan mode editing di toolbar. 
